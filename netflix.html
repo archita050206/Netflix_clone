@@ -5,19 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-
+<style>
+    .main{
+        background-position: center center;
+        background-size: max(1200px, 100vw);
+    }
+</style>
 </head>
 <body>
-    <div class="main h-[80vh] bg-[url('netbg.jpg')] " >
-        <nav class="absolute bg-green-800 h-15 max-w-[80vw] w-full mx-40 flex">
-            <div class="">
-                <button class="">English</button>
-                <button class="">Sign In</button>
+    <div class="main h-[95vh] bg-[url('netbg.jpg')] bg-no-repeat bg-cover " >
+        <nav class="absolute  h-15 max-w-[80vw] w-full mx-20 flex justify-between ">
+            <img src="logo1.png" class="h-20" alt="">
+            <div class="flex space-x-3 pt-5">
+                <button class="h-8 w-25  bg-black border-1 border-white text-white rounded-md">English</button>
+                <button class="h-8 w-20 bg-red-500 text-white rounded-md">Sign In</button>
             </div>
         </nav>
-        <div class="h-[80vh] " style="background: rgba(0,0,0,0.44);"></div>
+        <div class="h-[95vh] flex-col mx-auto items-center" style="background: rgba(0,0,0,0.7);">
+            <div class="text-center pt-55 space-y-4">
+            <h1 class="text-6xl  font-bold text-white">Unlimited movies,</h1>
+            <h1 class="text-6xl  font-bold text-white">TV shows and more</h1>
+            <h1 class="text-white text-xl font-semibold">
+                Starts at Rs. 129. Cancel at any time.
+            </h1>
+        <p class="text-white text-md pt-3 ">Ready to watch? Enter your email to create or restart your membership.</p>
+    <div class="flex justify-center align-center">
+        <input style="background: rgba(0,0,0,0.5)" class="border-1 border-gray-500 w-100 rounded-md me-2 text-gray-300 ps-3" type="email" placeholder="Email Address">
+        <button class="h-14 bg-red-500 w-50 text-2xl font-semibold text-white rounded-md">Get Started</button>
+    </div></div>
+        </div>
+        
+           
         
     </div>
+    
     
 </body>
 </html>
